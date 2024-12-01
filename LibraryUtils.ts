@@ -18,3 +18,5 @@ export function validateBook(book:Book):Boolean{
     else isValid=false;
     return isValid;
 }
+// console.log(generateID());
+// console.log(generateID());

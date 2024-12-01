@@ -20,8 +20,8 @@ books=[
   console.log("your search result is :") ;
   console.log(mylibrary.searchBooks("Time"));
 
-  mylibrary.markAsBorrowed(3,"Marina");
-  mylibrary.markAsBorrowed(5,"Sarah");
+  mylibrary.markAsBorrowed(3,"Rina");
+  mylibrary.markAsBorrowed(5,"Mina");
 
   mylibrary.markAsReturned(3);
 
