@@ -13,15 +13,15 @@ books=[
     { id: generateID(), title: 'Emma ', author: 'Jane Austen', isBorrowed: false, year: 1816, borrowedBy: null, category: 'Fiction' },
   ];
 
-  for(let i=0;i<5;i++){
+  for(let i=0;i<books.length;i++){
     if(validateBook(books[i]))
         mylibrary.addBook(books[i]);
   }
   console.log("your search result is :") ;
   console.log(mylibrary.searchBooks("Time"));
 
-  mylibrary.markAsBorrowed(3,"Rina");
-  mylibrary.markAsBorrowed(5,"Mina");
+  mylibrary.markAsBorrowed(3,"Marina");
+  mylibrary.markAsBorrowed(5,"Sarah");
 
   mylibrary.markAsReturned(3);
 
