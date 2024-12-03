@@ -21,7 +21,7 @@ export class Booklist{
     searchBooks(query:string):Book[]{
        let  book:Book[]=[];
        for(let index in this.books){
-        if(query===this.books[index].author || query===this.books[index].title){
+        if(query.toLowerCase()===this.books[index].author.toLowerCase() || query.toLowerCase()===this.books[index].title.toLowerCase()){
           book[index]=this.books[index];
         }
     }
@@ -49,8 +49,11 @@ export class Booklist{
        let borrowedbooks:Book[]=[];
         for(let index in this.books)
          {
-            if(this.books[index].isBorrowed)
-                borrowedbooks[index]=this.books[index];
+            let i=0;
+            if(this.books[index].isBorrowed){
+                borrowedbooks[i]=this.books[index];
+            i++;
+            }
          }
     return borrowedbooks;
         }
