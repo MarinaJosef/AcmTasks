@@ -13,10 +13,8 @@ export function validateBook(book:Book):Boolean{
     typeof book.isBorrowed === 'boolean' &&
     typeof book.year === 'number' &&
     (typeof book.borrowedBy === 'string' || book.borrowedBy === null) && typeof book.category === 'string')
-    isValid=true;
+    return true;
     
-    else isValid=false;
-    return isValid;
+    else 
+    return false;
 }
-// console.log(generateID());
-// console.log(generateID());
